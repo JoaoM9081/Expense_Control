@@ -38,7 +38,6 @@ git clone https://github.com/JoaoM9081/Expense_Control.git
 
 Este projeto depende das seguintes bibliotecas Python:
 
-* tkinter
 * pillow
 * matplotlib
 * tkcalendar
