@@ -159,6 +159,10 @@ def valores_porcent():
 
     despesas_total = sum(despesas_list)
 
+    # Verificação para evitar divisão por zero
+    if receita_total == 0:
+        return 0
+
     # porcentagem total
     total = ((receita_total - despesas_total)/ receita_total) * 100
 
