@@ -41,45 +41,30 @@ def deletar_gasto(g):
 
 # vendo categorias
 def ver_categoria():
-    list = []
-
     with con:
         cur = con.cursor()
         cur.execute("SELECT * FROM Categoria")
         row = cur.fetchall()
 
-        for r in row:
-            list.append(r)
-
-    return list
+    return row
 
 # vendo receitas
 def ver_receitas():
-    list = []
-
     with con:
         cur = con.cursor()
         cur.execute("SELECT * FROM Receitas")
         row = cur.fetchall()
 
-        for r in row:
-            list.append(r)
-
-    return list
+    return row
 
 # vendo gastos
 def ver_gastos():
-    list = []
-
     with con:
         cur = con.cursor()
         cur.execute("SELECT * FROM Gastos")
         row = cur.fetchall()
 
-        for r in row:
-            list.append(r)
-
-    return list
+    return row
 
 # função para dados da tabela
 def tabela():
